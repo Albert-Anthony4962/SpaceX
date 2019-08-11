@@ -1,0 +1,45 @@
+/* Header */
+
+header{
+    background: #0b0b0b;
+    color: #fff;
+    padding-top: 5rem;
+    min-height: 12rem;
+    border-bottom: .3rem solid #e8491d;
+}
+
+header button{
+    color: #fff;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    border-bottom: .2rem solid transparent;
+    padding: .5rem 2rem .5rem 2rem;
+
+
+    transition: all .2s;
+}
+
+header button:hover{
+    border-bottom: .2rem solid #fff;
+}
+
+header li{
+    display: inline;
+    padding: 0 2rem 0 2rem;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding img{
+    margin: .4rem 0 .8rem 0;
+}
+
+header nav{
+    float: right;
+}

@@ -1,0 +1,58 @@
+.Amos{
+    background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1070&q=80');
+    background-size: contain;
+    height: 142.5rem;
+    position: relative;
+}
+
+.Amos::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50.9%;
+    /* background-color: rgba(0,0,0, 1); */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1),rgba(0,0,0,1), rgba(0,0,0,0));
+    /* z-index: 10; */
+    top: 70rem;
+}
+
+.Amos h1,
+.Amos .amosContainer p{
+    color: #fff;
+    text-align: center;
+}
+
+.Amos h1{
+    margin: 12rem 0 15rem 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12rem;
+}
+
+.Amos .amosContainer p{
+    margin: 2rem;
+    padding: 0 12rem 0 10rem;
+    font-family: Arial,sans-serif;
+    font-size: 2.2rem;
+    line-height: 3rem;
+}
+
+.Amos .amosContainer p:last-of-type{
+    margin-bottom: 40rem;
+}
+
+.Amos .container iframe{
+    position: absolute;
+    top: 70rem;
+    left: 70rem;
+}
+
+.Amos a{
+    text-decoration: none;
+    color: #3569a4;
+}
+
+.Amos a:hover{
+    border-bottom: .1rem solid #3569a4;
+}

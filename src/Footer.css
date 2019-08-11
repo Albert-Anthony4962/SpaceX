@@ -1,0 +1,45 @@
+/* Footer */
+
+footer{
+    padding: 2rem;
+    margin-top: 40rem;
+    color: #fff;
+    background-color: #0b0b0b;
+}
+
+footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+footer img{
+    float: left;
+    padding-right: 2rem;
+    border-right: .2rem solid #666;
+}
+
+footer li{
+    display: inline;
+    margin-left: 3rem;
+}
+
+footer li button{
+    margin-top: .5rem;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+footer li button:hover{
+    border-bottom: .2rem solid #fff;
+}
+
+footer p{
+    float: right;
+    color: #666;
+}
