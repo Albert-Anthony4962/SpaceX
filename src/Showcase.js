@@ -3,13 +3,13 @@ import {Link} from "react-router-dom";
 import './Showcase.css';
 import playPause from './playPause.png';
 
-var slideIndex, slides, navBtns, captionText, buttonText, timer;
+var slideIndex, slides, navBtns, captionText, buttonText, playPauseBtn, timer;
 class Showcase extends Component{
     constructor(props){
         super(props);
         this.state={
             url: ["/amos", "/smallsat", "/astronauts"],
-            num: null
+            num: 0
         };
         this.moveSlide = this.moveSlide.bind(this);
         this.plusSlides = this.plusSlides.bind(this);
@@ -21,6 +21,11 @@ class Showcase extends Component{
     componentDidMount(){
         this.initGallery();
         this.setTimer();
+        // window.onbeforeunload = () => {  //NEEDED
+        //     console.log("worked");
+        //     this.deactivateTimer();
+        // }
+        // window.onbeforeunload();
     }
     initGallery(){
         slideIndex = 0;
@@ -41,10 +46,18 @@ class Showcase extends Component{
             navBtn.classList.add("navBtns");
             navBtn.addEventListener("click", () => {this.moveSlide(i); this.resetTimer();});
             navBtnsContainer.append(navBtn);
+            navBtn.style.padding = "3rem 2rem 2rem 0rem";
+            navBtn.style.color = "#fff";
+            navBtn.style.borderLeft = ".2rem solid rgba(0, 0, 0, .25)";
+            navBtn.style.borderRight = ".2rem solid rgba(0, 0, 0, .25)";
+            navBtn.style.fontSize = "1.8rem";
             navBtns.push(navBtn);
         };
 
         navBtns[slideIndex].classList.add("active");
+        navBtns[0].innerText = '01  AMOS-17 MISSION';
+        navBtns[1].innerText = '02  SMALLSAT RIDESHARE PROGRAM';
+        navBtns[2].innerText = '03  NASA ASTRONAUTS ON CREW DRAGON';
     }
     plusSlides(n){
         this.moveSlide(slideIndex + n);
@@ -89,7 +102,7 @@ class Showcase extends Component{
         buttonText.style.display="none";
         buttonText.className="buttonText "+slideTextAnimClass;
         buttonText.innerText=slides[n].querySelector(".buttonText").innerText;
-        buttonText.style.display="inline-block";
+        buttonText.style.display="inline";
         this.setState({
             num: n
         });
@@ -101,7 +114,7 @@ class Showcase extends Component{
         }, 6000);
     }
     playPauseSlides(){
-        var playPauseBtn = document.getElementById("playPauseBtn");
+        playPauseBtn = document.getElementById("playPauseBtn");
         if(timer === null){
             this.setTimer();
             playPauseBtn.style.backgroundPositionY = "0";
@@ -113,9 +126,13 @@ class Showcase extends Component{
     }
     resetTimer(){
         clearInterval(timer);
+        playPauseBtn = document.getElementById("playPauseBtn");
+        playPauseBtn.style.backgroundPositionY = "0";
         this.setTimer();
     }
     deactivateTimer(){
+        // playPauseBtn = document.getElementById("playPauseBtn");  //NEEDED
+        // playPauseBtn.style.backgroundPositionY = "-5rem";    //NEEDED
         clearInterval(timer);
     }
     render(){
@@ -127,8 +144,10 @@ class Showcase extends Component{
 
                 <div className="captionHolder">
                     {/* <p className="captionText"></p> */}
-                    <Link exact to={this.state.url[this.state.num]} onClick={() => this.deactivateTimer()} className="captionText"></Link>
-                    <Link exact to={this.state.url[this.state.num]} onClick={() => this.deactivateTimer()} className="buttonText"></Link>
+                    <div className="captionHolderContainer">
+                        <Link exact to={this.state.url[this.state.num]} onClick={() => this.deactivateTimer()} className="captionText"></Link>
+                        <Link exact to={this.state.url[this.state.num]} onClick={() => this.deactivateTimer()} className="buttonText"></Link>
+                    </div>
                 </div>
                 <div className="imageHolder"> {/*HOLDS ALL IMAGES HERE*/}
                     <img src="https://www.spacex.com/sites/spacex/files/amos17_v2.jpg" alt="Amos-17 Mission"/>
@@ -155,36 +174,3 @@ class Showcase extends Component{
 }
 
 export default Showcase;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <div className="container">
-                    <h1>Our future is on <span>Mars.</span></h1>
-                </div>
-                <div className="newsletterContainer">
-                        <h1 className="newsletterTitle">Amos-17 Mission</h1>
-                        <Link exact to="/amos">Watch Replay</Link>
-                </div>
-
-                <nav id="Newsletter">
-                    <div className="container">
-                        <ol>
-                            <li>Amos-17</li>
-                            <li>Amos-17</li>
-                            <li>Amos-17</li>
-                        </ol>
-                    </div>
-                </nav> */}
