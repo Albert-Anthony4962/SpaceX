@@ -3,6 +3,7 @@ import {Route, Switch} from "react-router-dom";
 import './App.css';
 import Home from './Home';
 import Amos from './Amos';
+import Astronauts from './Astronauts';
 
 class App extends Component{
   render(){
@@ -11,6 +12,7 @@ class App extends Component{
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/amos" component={Amos}/>
+          <Route exact path="/astronauts" component={Astronauts}/>
         </Switch>
       </div>
     );
