@@ -1,0 +1,215 @@
+.Smallsat{
+    overflow-x: hidden;
+}
+
+.Smallsat #feature .videoPlayer{
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: -16.5rem;
+    left: 0;
+    z-index: -1;
+}
+
+.Smallsat #feature .featureText{
+    color: #fff;
+    text-align: center;
+    margin: 20rem 0 0 50%;
+    transform: translate(-50%);
+    display: inline-block;
+    height: 50rem;
+    width: 120rem;
+    line-height: 10rem;
+    text-transform: uppercase;
+}
+
+.Smallsat #feature .featureText h1{
+    margin-top: 2rem;
+    font-size: 10rem;
+}
+
+.Smallsat #feature .featureText h3{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.Smallsat .missions{
+    margin-top: 29.7rem;
+    background-image: url("https://www.spacex.com/sites/spacex/files/static_pages/bg_missions.jpg");
+    background-size: cover;
+    background-position: 60%, 50%;
+    height: 100vh;
+}
+
+.Smallsat .missions .missionsContainer{
+    display: inline-block;
+    margin: 5% 0 0 17%;
+    height: 90rem;
+    width: 70rem;
+    color: #fff;
+}
+
+.Smallsat .missions h3{
+    display: inline-block;
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 8rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.Smallsat .missions p{
+    font-size: 2.5rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.Smallsat .rideshare{
+    background-image: url("https://www.spacex.com/sites/spacex/files/static_pages/bg_rideshare.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%, 50%;
+    height: 100vh;
+}
+
+.Smallsat .rideshareContainer{
+    color: #fff;
+    display: inline-block;
+    width: 140rem;
+    margin: 20.5% 0 0 20%;
+    text-align: center;
+}
+
+.Smallsat .rideshareContainer p{
+    font-size: 3.8rem;
+    line-height: 6rem;
+    font-weight: 600;
+}
+
+.Smallsat .pricing video{
+    display: block;
+}
+
+.Smallsat .pricing .pricingContainer{
+    text-align: center;
+    width: 140rem;
+    position: absolute;
+    top: 345rem;
+    left: 45rem;
+    color: #fff;
+}
+
+.Smallsat .pricing .pricingContainer h2{
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.Smallsat .pricing .pricingContainer img{
+    width: 100%;
+}
+
+.Smallsat .pricing .pricingContainer p{
+    font-size: 2.4rem;
+    line-height: 4rem;
+}
+
+.Smallsat .schedule{
+    background-image: url("https://www.spacex.com/sites/spacex/files/static_pages/bg_schedule.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%, 50%;
+    height: 100vh;
+}
+
+.Smallsat .schedule .scheduleContainer{
+    color: #fff;
+    display: inline-block;
+    margin: 36rem 0 0 40rem;
+    width: 70rem;
+    height: auto;
+}
+
+.Smallsat .schedule .scheduleContainer h2{
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 4.5rem;
+}
+
+.Smallsat .schedule .scheduleContainer p{
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+.Smallsat .falcon9 .falcon9Container1{
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Smallsat .falcon9 .falcon9Container1 h2{
+    padding: 12rem 0 7rem 0;
+    font-size: 6rem;
+}
+
+.Smallsat .falcon9 .falcon9Container1 img{
+    width: 60%;
+}
+
+.Smallsat .falcon9 video{
+    display: block;
+}
+
+.Smallsat .falcon9 .falcon9Container2{
+    /* background-color: rgba(255, 45, 79, .25); */
+    color: #fff;
+    position: absolute;
+    top: 650rem;
+    left: 45rem;
+    width: 65rem;
+}
+
+.Smallsat .falcon9 .falcon9Container2 h2{
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+.Smallsat .falcon9 .falcon9Container2 p{
+    font-size: 2.3rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+}
+
+.Smallsat .falcon9 .falcon9Container2 img{
+    width: 100%;
+}
+
+.Smallsat .footer{
+    text-align: center;
+    background-color: #141414;
+    color: #979797;
+    padding: 2.5rem;
+    line-height: 6rem;
+}
+
+.Smallsat .footer p{
+    font-size: 3rem;
+}
+
+.Smallsat .footer p a{
+    text-decoration: underline;
+}
+
+.Smallsat .footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.Smallsat .footer ul li{
+    display: inline;
+    margin: 0 2rem 0 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
