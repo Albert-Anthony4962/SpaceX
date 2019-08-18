@@ -4,8 +4,34 @@ import Header from './Header';
 import feature from './feature.mp4';
 import pricing from './pricing.mp4';
 import falcon from './falcon9.mp4';
+import * as ScrollMagic from 'scrollmagic'
 
 class Smallsat extends Component{
+    componentDidMount(){
+        var controller = new ScrollMagic.Controller();
+
+        function scene(trigger, target, action){
+            new ScrollMagic.Scene({
+                triggerElement: trigger
+            })
+            .setClassToggle(target, action)
+            .addTo(controller);
+        }
+
+        scene(".Smallsat .missions h3", ".Smallsat .missions h3", 'show');
+        scene(".Smallsat .missions p", ".Smallsat .missions p", 'show');
+        scene(".Smallsat .rideshareContainer p", ".Smallsat .rideshareContainer p", "show");
+        scene(".Smallsat .pricing .pricingContainer h2", ".Smallsat .pricing .pricingContainer h2", "show");
+        scene(".Smallsat .pricing .pricingContainer img", ".Smallsat .pricing .pricingContainer img", "show");
+        scene(".Smallsat .pricing .pricingContainer img", ".Smallsat .pricing .pricingContainer p", "show");
+        scene(".Smallsat .schedule .scheduleContainer h2", ".Smallsat .schedule .scheduleContainer h2", "show");
+        scene(".Smallsat .schedule .scheduleContainer p", ".Smallsat .schedule .scheduleContainer p", "show");
+        scene(".Smallsat .falcon9 .falcon9Container1 h2", ".Smallsat .falcon9 .falcon9Container1 h2", "show");
+        scene(".Smallsat .falcon9 .falcon9Container1 img", ".Smallsat .falcon9 .falcon9Container1 img", "show");
+        scene(".Smallsat .falcon9 .falcon9Container2 h2", ".Smallsat .falcon9 .falcon9Container2 h2", "show");
+        scene(".Smallsat .falcon9 .falcon9Container2 p", ".Smallsat .falcon9 .falcon9Container2 p", "show");
+        scene(".Smallsat .falcon9 .falcon9Container2 p", ".Smallsat .falcon9 .falcon9Container2 img", "show");
+    }
     render(){
         return(
             <div className="Smallsat">

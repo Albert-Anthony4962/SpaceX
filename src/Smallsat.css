@@ -56,12 +56,26 @@
     line-height: 8rem;
     text-transform: uppercase;
     margin-bottom: 3rem;
+    opacity: 0;
+    transition: .2s;
+}
+
+.Smallsat .missions h3.show{
+    opacity: 1;
 }
 
 .Smallsat .missions p{
     font-size: 2.5rem;
     line-height: 5rem;
     margin-bottom: 2rem;
+    opacity: 0;
+    margin-top: 5rem;
+    transition: .2s;
+}
+
+.Smallsat .missions p.show{
+    margin-top: 0;
+    opacity: 1;
 }
 
 .Smallsat .rideshare{
@@ -84,6 +98,14 @@
     font-size: 3.8rem;
     line-height: 6rem;
     font-weight: 600;
+    opacity: 0;
+    transition: .2s;
+    margin-top: 5rem;
+}
+
+.Smallsat .rideshareContainer p.show{
+    margin-top: 0;
+    opacity: 1;
 }
 
 .Smallsat .pricing video{
@@ -103,15 +125,39 @@
     font-size: 5rem;
     text-transform: uppercase;
     margin-bottom: 4rem;
+    margin-top: 5rem;
+    transition: .2s;
+    opacity: 0;
+}
+
+.Smallsat .pricing .pricingContainer h2.show{
+    opacity: 1;
+    margin-top: 0;
 }
 
 .Smallsat .pricing .pricingContainer img{
     width: 100%;
+    transition: .2s;
+    opacity: 0;
+    margin-top: 5rem;
+}
+
+.Smallsat .pricing .pricingContainer img.show{
+    opacity: 1;
+    margin-top: 0;
 }
 
 .Smallsat .pricing .pricingContainer p{
     font-size: 2.4rem;
     line-height: 4rem;
+    transition: .4s;
+    opacity: 0;
+    margin-top: 10rem; 
+}
+
+.Smallsat .pricing .pricingContainer p.show{
+    opacity: 1;
+    margin-top: 0;
 }
 
 .Smallsat .schedule{
@@ -134,11 +180,25 @@
     text-transform: uppercase;
     font-size: 4rem;
     margin-bottom: 4.5rem;
+    transition: .2s;
+    opacity: 0;
+}
+
+.Smallsat .schedule .scheduleContainer h2.show{
+    opacity: 1;
 }
 
 .Smallsat .schedule .scheduleContainer p{
     font-size: 2.5rem;
     line-height: 4rem;
+    transition: .2s;
+    margin-top: 10rem;
+    opacity: 0;
+}
+
+.Smallsat .schedule .scheduleContainer p.show{
+    opacity: 1;
+    margin-top: 0;
 }
 
 .Smallsat .falcon9 .falcon9Container1{
@@ -151,10 +211,22 @@
 .Smallsat .falcon9 .falcon9Container1 h2{
     padding: 12rem 0 7rem 0;
     font-size: 6rem;
+    transition: .2s;
+    opacity: 0;
+}
+
+.Smallsat .falcon9 .falcon9Container1 h2.show{
+    opacity: 1;
 }
 
 .Smallsat .falcon9 .falcon9Container1 img{
     width: 60%;
+    transition: .2s;
+    opacity: 0;
+}
+
+.Smallsat .falcon9 .falcon9Container1 img.show{
+    opacity: 1;
 }
 
 .Smallsat .falcon9 video{
@@ -162,7 +234,6 @@
 }
 
 .Smallsat .falcon9 .falcon9Container2{
-    /* background-color: rgba(255, 45, 79, .25); */
     color: #fff;
     position: absolute;
     top: 650rem;
@@ -174,16 +245,40 @@
     text-transform: uppercase;
     font-size: 5rem;
     margin-bottom: 5rem;
+    transition: .2s;
+    margin-top: 10rem;
+    opacity: 0;
+}
+
+.Smallsat .falcon9 .falcon9Container2 h2.show{
+    opacity: 1;
+    margin-top: 0;
 }
 
 .Smallsat .falcon9 .falcon9Container2 p{
     font-size: 2.3rem;
     line-height: 4rem;
     margin-bottom: 3rem;
+    transition: .2s;
+    margin-top: 10rem;
+    opacity: 0;
+}
+
+.Smallsat .falcon9 .falcon9Container2 p.show{
+    opacity: 1;
+    margin-top: 0;
 }
 
 .Smallsat .falcon9 .falcon9Container2 img{
     width: 100%;
+    transition: .2s;
+    opacity: 0;
+    margin-top: 10rem;
+}
+
+.Smallsat .falcon9 .falcon9Container2 img.show{
+    opacity: 1;
+    margin-top: 0;
 }
 
 .Smallsat .footer{

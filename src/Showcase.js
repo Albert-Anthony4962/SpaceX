@@ -138,8 +138,8 @@ class Showcase extends Component{
     render(){
         return(
             <section id="Showcase"> {/*CONTAINS ALL SLIDING IMAGES*/}
-                    <div id="right" onClick={() => {this.plusSlides(1); this.resetTimer()}}>NEXT&gt;</div>
-                    <div id="left" onClick={() => {this.plusSlides(-1); this.resetTimer()}}>&lt;PREV</div>
+                    <div id="right" onClick={() => {this.plusSlides(1); this.resetTimer()}}>&rsaquo;</div>
+                    <div id="left" onClick={() => {this.plusSlides(-1); this.resetTimer()}}>&lsaquo;</div>
                     <div id="playPauseBtn" onClick={() => this.playPauseSlides()}></div>
 
                 <div className="captionHolder">
